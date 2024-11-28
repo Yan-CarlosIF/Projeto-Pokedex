@@ -12,38 +12,35 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Font Roboto  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- Font Pokemon -->
+    <link href="https://fonts.cdnfonts.com/css/pokemon-hollow" rel="stylesheet">            
+
+    <!-- Font Manrope  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/pokedex.css" />
+    <link rel="stylesheet" href="./assets/css/types-colors.css" />
   </head>
+
   <body>
     <section class="content">
-      <h1>Pokédex</h1>
+      <h1>Pokédex do Yanzin</h1>
 
-      <ol class="pokemons">
-        <li class="pokemon">
-          <span class="number">#001</span>
-          <span class="nome">Bulbasaur</span>
-          <div class="detail">
-            <ul class="types">
-              <li class="type">Grass</li>
-              <li class="type">Poison</li>
-            </ul>
-            <img
-              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
-              alt="Bulbasaur"/>
-          </div>
-        </li>
-      </ol>
+      <ol id="pokemonsList"></ol>
+      <div class="pagination">
+        <button class="left" type="button"></button>
+        <button id="loadMorePokemons" type="submit"></button>
+        <button class="right" type="button"></button>
+      </div>
     </section>
 
-    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/pokemon-model.js"></script>
+    <script src="./assets/js/poke-api.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
