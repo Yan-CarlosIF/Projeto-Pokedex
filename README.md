@@ -40,14 +40,14 @@ Uma Pokédex interativa desenvolvida com JavaScript, HTML, CSS e a API open-sour
 ```
 📂 POKEDEX/
 ├── 📂 assets/
+│   ├── 📂 components/
+│   │   └── pokemon-model.js     
 │   ├── 📂 css/
 │   │   ├── pokedex.css
-│   │   ├── style.css
-│   │   └── types-colors.css
+│   │   └── style.css
 │   ├── 📂 js/
 │   │   ├── main.js
-│   │   ├── poke-api.js
-│   │   └── pokemon-model.js
+│   │   └── poke-api.js
 │   └── (imagens e ícones opcionais)
 ├── index.html
 └── README.md

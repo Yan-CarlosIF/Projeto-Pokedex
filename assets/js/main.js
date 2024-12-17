@@ -10,9 +10,10 @@ const rightButton = document.querySelector(".right");
 const leftButton = document.querySelector(".left");
 
 pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
-    const newHtml = pokemons.map((pokemon) => new Pokemon(pokemon.name, pokemon.id, pokemon.types).ConvertPokemonToLi()).join('');
+    const newHtml = pokemons.map(pokemon => `<pokemon-card name="${pokemon.name}" id="${pokemon.id}" types='${JSON.stringify(pokemon.types)}'></pokemon-card>`).join('');
+    
     pokemonsList.innerHTML = newHtml;
-})
+});
 
 rightButton.addEventListener('click', () => {
         if (offset >= 700) {
@@ -24,11 +25,11 @@ rightButton.addEventListener('click', () => {
 
         if (lastPage < 2) {
             pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
-                const newHtml = pokemons.map((pokemon) => new Pokemon(pokemon.name, pokemon.id, pokemon.types).ConvertPokemonToLi()).join('');
+                const newHtml = pokemons.map(pokemon => `<pokemon-card name="${pokemon.name}" id="${pokemon.id}" types='${JSON.stringify(pokemon.types)}'></pokemon-card>`).join('');
                 pokemonsList.innerHTML = newHtml;
                 pageNumber++;
                 page.textContent = pageNumber;
-            })
+            });
         }
 });
 
@@ -44,10 +45,10 @@ leftButton.addEventListener('click', () => {
     } 
     
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
-        const newHtml = pokemons.map((pokemon) => new Pokemon(pokemon.name, pokemon.id, pokemon.types).ConvertPokemonToLi()).join('');
+        const newHtml = pokemons.map(pokemon => `<pokemon-card name="${pokemon.name}" id="${pokemon.id}" types='${JSON.stringify(pokemon.types)}'></pokemon-card>`).join('');
         pokemonsList.innerHTML = newHtml;
-    })
+    });
 
     pageNumber--;
     page.textContent = pageNumber;
-})
+});
