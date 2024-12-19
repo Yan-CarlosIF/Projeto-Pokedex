@@ -13,6 +13,9 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Search Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
     <!-- Font Pokemon -->
     <link href="https://fonts.cdnfonts.com/css/pokemon-hollow" rel="stylesheet"/>
 
@@ -29,6 +32,10 @@
   <body>
     <section class="content">
       <h1>Pokédex do Yanzin</h1>
+      <div class="input-container">
+        <input type="text" class="input-field" placeholder="Busca na Pókedex"/>
+        <i class="fas fa-search search-icon" onclick="searchPokemon()"></i>
+      </div>
 
       <ol id="pokemonsList"></ol>
 
