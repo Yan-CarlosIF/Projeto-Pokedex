@@ -45,10 +45,12 @@ Uma Pokédex interativa desenvolvida com JavaScript, HTML, CSS e a API open-sour
 │   ├── 📂 css/
 │   │   ├── pokedex.css
 │   │   └── style.css
-│   ├── 📂 js/
-│   │   ├── main.js
-│   │   └── poke-api.js
-│   └── (imagens e ícones opcionais)
+│   ├── 📂 images/
+│   │   ├── handle dark.svg
+│   │   └── handle light.svg
+│   └── 📂 js/
+│       ├── main.js
+│       └── poke-api.js
 ├── index.html
 └── README.md
 ```
