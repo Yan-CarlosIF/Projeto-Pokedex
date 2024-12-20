@@ -25,7 +25,7 @@ class Pokemon extends HTMLElement {
     return `
     <li class="pokemon" color-type="${this.#color}">
       <span class="number">#${this.getAttribute("id").padStart(3, "0")}</span>
-      <span class="name">${name}</span>
+      <span class="name">${imageName}</span>
       <div class="detail">
         <ul class="types">${typesList}</ul>
         <img src="https://img.pokemondb.net/sprites/home/normal/${imageName}.png" alt="${name}" />
@@ -35,6 +35,7 @@ class Pokemon extends HTMLElement {
 
   styles() {
     const style = document.createElement("style");
+    
     style.textContent = `
     .pokemon {
       display: flex;

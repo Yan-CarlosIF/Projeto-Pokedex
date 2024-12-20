@@ -17,7 +17,7 @@ Uma Pokédex interativa desenvolvida com JavaScript, HTML, CSS e a API open-sour
   - Numero na pokédex nacional
   - Nome
   - Tipo(s)
-  - Sprites oficiais
+  - Sprites oficiais 3D
 - **Responsividade**: Design adaptado para diferentes tamanhos de tela.
 
 ## 🚀 Como Rodar o Projeto
@@ -60,7 +60,7 @@ Uma Pokédex interativa desenvolvida com JavaScript, HTML, CSS e a API open-sour
 O projeto utiliza a [PokéAPI](https://pokeapi.co), uma API open-source que fornece informações detalhadas sobre os pokémons. Documentação oficial [aqui](https://pokeapi.co/docs/v2).
 
 ## 📝 To-Do
-- [ ] Busca por nome ou ID para obter informações específicas.
+- [x] Busca por nome ou ID para obter informações específicas.
 - [ ] Implementar a busca avançada por habilidades ou tipos.
 - [ ] Adicionar a funcionalidade de favoritos.
 - [ ] Melhorar o design visual.
