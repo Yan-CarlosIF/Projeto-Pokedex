@@ -46,8 +46,8 @@ Uma Pokédex interativa desenvolvida com JavaScript, HTML, CSS e a API open-sour
 │   │   ├── pokedex.css
 │   │   └── style.css
 │   ├── 📂 images/
-│   │   ├── handle dark.svg
-│   │   └── handle light.svg
+│   │   ├── handle_dark.svg
+│   │   └── handle_light.svg
 │   └── 📂 js/
 │       ├── main.js
 │       └── poke-api.js
